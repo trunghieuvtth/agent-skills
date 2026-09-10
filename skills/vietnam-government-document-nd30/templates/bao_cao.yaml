@@ -1,0 +1,51 @@
+version: 3.3.1
+document_type: BAO_CAO
+legal_basis: Nghi_dinh_30_2020_ND_CP
+has_type_title: true
+page:
+  size: A4
+  orientation: portrait
+  margins_mm: {top: 20, bottom: 20, left: 30, right: 20}
+font: {family: Times New Roman, color: black}
+header:
+  left:
+    parent_agency: "[CƠ QUAN CHỦ QUẢN TRỰC TIẾP]"
+    issuing_agency: "[CƠ QUAN BAN HÀNH]"
+  right:
+    national_header: "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+    national_motto: "Độc lập - Tự do - Hạnh phúc"
+number_and_date:
+  number: "Số: [CHƯA CÓ SỐ]/BC-[KÝ HIỆU CƠ QUAN]"
+  locality_date: "[ĐỊA DANH], ngày [..] tháng [..] năm [....]"
+title_block:
+  document_type_title: "BÁO CÁO"
+  subject: "[TÊN/NỘI DUNG BÁO CÁO]"
+recipient:
+  optional: true
+  label: "Kính gửi:"
+  values: ["[CƠ QUAN/ĐƠN VỊ NHẬN BÁO CÁO]"]
+opening:
+  text: "[CƠ QUAN] báo cáo [NỘI DUNG] như sau:"
+sections:
+  - heading: "I. TÌNH HÌNH CHUNG/CĂN CỨ THỰC HIỆN"
+    optional: true
+  - heading: "II. KẾT QUẢ THỰC HIỆN"
+    requirements: [so_lieu_co_nguon, ket_qua_theo_nhiem_vu]
+  - heading: "III. ĐÁNH GIÁ"
+    subsections: ["1. Kết quả đạt được", "2. Tồn tại, hạn chế", "3. Nguyên nhân"]
+  - heading: "IV. NHIỆM VỤ, GIẢI PHÁP"
+    optional: true
+  - heading: "V. ĐỀ XUẤT, KIẾN NGHỊ"
+    optional: true
+signature:
+  signing_authority: "[CẦN XÁC MINH TƯ CÁCH KÝ]"
+  title: "[CHỨC VỤ NGƯỜI KÝ]"
+  signer_name: "[CHƯA XÁC ĐỊNH NGƯỜI KÝ]"
+recipients_block:
+  heading: "Nơi nhận:"
+  items: ["Như trên;", "[NƠI NHẬN KHÁC NẾU CÓ];", "Lưu: VT, [ĐƠN VỊ SOẠN THẢO]."]
+validation:
+  require_source_for_material_statistics: true
+  forbid_invented_numbers: true
+  require_no_unresolved_placeholders_for_final: true
+  require_render_check_for_final: true
