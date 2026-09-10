@@ -1,0 +1,55 @@
+version: 3.3.1
+scope: all_administrative_documents
+paper:
+  size: A4
+  width_mm: 210
+  height_mm: 297
+  default_orientation: portrait
+  landscape_allowed_for_wide_tables_or_appendices: true
+margins_mm:
+  top: {min: 20, max: 25, generator_default: 20}
+  bottom: {min: 20, max: 25, generator_default: 20}
+  left: {min: 30, max: 35, generator_default: 30}
+  right: {min: 15, max: 20, generator_default: 20}
+typography:
+  font: Times New Roman
+  encoding: Unicode
+  color: black
+  body_size_pt: {min: 13, max: 14, generator_default: 13}
+  body_alignment: justified
+  first_line_indent_cm: [1.0, 1.27]
+  line_spacing: {min: 1.0, max: 1.5, generator_default: 1.15}
+  paragraph_space_after_pt_min: 6
+national_header:
+  text: "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+  uppercase: true
+  bold: true
+  size_pt: [12, 13]
+national_motto:
+  text: "Độc lập - Tự do - Hạnh phúc"
+  bold: true
+  size_pt: [13, 14]
+page_number:
+  digits: arabic
+  position: top_center
+  size_pt: [13, 14]
+  count_first_page: true
+  show_first_page_number: false
+layout_engine:
+  forbid_space_based_alignment: true
+  forbid_blank_line_signature_push: true
+  use_borderless_tables_or_tabs: true
+  use_keep_with_next_for_headings: true
+  prevent_signature_split_when_possible: true
+  prevent_recipient_block_split_when_possible: true
+final_policy:
+  legal_gate: PASS
+  authority_gate: PASS
+  annex_i_gate: PASS
+  annex_ii_gate: PASS_OR_REVIEWED
+  annex_iii_gate: PASS
+  docx_gate: PASS
+  render_gate: PASS
+  unresolved_placeholders: 0
+  critical_errors: 0
+  major_errors: 0
