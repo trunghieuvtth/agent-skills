@@ -1,0 +1,50 @@
+version: 3.3.1
+document_type: KE_HOACH
+legal_basis: Nghi_dinh_30_2020_ND_CP
+has_type_title: true
+page:
+  size: A4
+  orientation: portrait
+  margins_mm: {top: 20, bottom: 20, left: 30, right: 20}
+font: {family: Times New Roman, color: black}
+header:
+  left:
+    parent_agency: "[CƠ QUAN CHỦ QUẢN TRỰC TIẾP]"
+    issuing_agency: "[CƠ QUAN BAN HÀNH]"
+  right:
+    national_header: "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+    national_motto: "Độc lập - Tự do - Hạnh phúc"
+number_and_date:
+  number: "Số: [CHƯA CÓ SỐ]/KH-[KÝ HIỆU CƠ QUAN]"
+  locality_date: "[ĐỊA DANH], ngày [..] tháng [..] năm [....]"
+title_block:
+  document_type_title: "KẾ HOẠCH"
+  subject: "[TÊN KẾ HOẠCH]"
+opening_basis:
+  optional: true
+  text: "Thực hiện [CĂN CỨ ĐÃ XÁC MINH], [CƠ QUAN] ban hành Kế hoạch ... như sau:"
+sections:
+  - heading: "I. MỤC ĐÍCH, YÊU CẦU"
+    subsections:
+      - "1. Mục đích"
+      - "2. Yêu cầu"
+  - heading: "II. NỘI DUNG, NHIỆM VỤ"
+    task_fields: [noi_dung, don_vi_chu_tri, don_vi_phoi_hop, thoi_han, san_pham]
+  - heading: "III. KINH PHÍ THỰC HIỆN"
+    optional: true
+    note: "Chỉ nêu nguồn và cơ chế thực hiện khi có căn cứ; không tự tạo mức chi."
+  - heading: "IV. TỔ CHỨC THỰC HIỆN"
+    requirements: [phan_cong, phoi_hop, bao_cao, theo_doi_don_doc]
+signature:
+  signing_authority: "[CẦN XÁC MINH TƯ CÁCH KÝ]"
+  title: "[CHỨC VỤ NGƯỜI KÝ]"
+  signer_name: "[CHƯA XÁC ĐỊNH NGƯỜI KÝ]"
+recipients_block:
+  heading: "Nơi nhận:"
+  items: ["[ĐƠN VỊ THỰC HIỆN];", "[ĐƠN VỊ PHỐI HỢP/BÁO CÁO NẾU CÓ];", "Lưu: VT, [ĐƠN VỊ SOẠN THẢO]."]
+validation:
+  require_task_owner: true
+  require_task_deadline_when_applicable: true
+  require_deliverable_when_applicable: true
+  warn_multiple_lead_units: true
+  require_no_unresolved_placeholders_for_final: true
