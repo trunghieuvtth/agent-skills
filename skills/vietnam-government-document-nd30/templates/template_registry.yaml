@@ -1,0 +1,37 @@
+version: 3.3.1
+source_scope: Nghi_dinh_30_2020_ND_CP_Article_7_and_Appendix_III
+note: "Tên loại/ký hiệu phải đối chiếu Phụ lục III khi xuất Final; registry này dùng để phân loại và ánh xạ template."
+document_types:
+  NGHI_QUYET_CA_BIET: {title: "NGHỊ QUYẾT", template_family: generic_named_document}
+  QUYET_DINH_CA_BIET: {title: "QUYẾT ĐỊNH", template_family: quyet_dinh, template_file: quyet_dinh.yaml}
+  CHI_THI: {title: "CHỈ THỊ", template_family: generic_named_document}
+  QUY_CHE: {title: "QUY CHẾ", template_family: generic_named_document}
+  QUY_DINH: {title: "QUY ĐỊNH", template_family: generic_named_document}
+  THONG_CAO: {title: "THÔNG CÁO", template_family: generic_named_document}
+  THONG_BAO: {title: "THÔNG BÁO", template_family: thong_bao, template_file: thong_bao.yaml}
+  HUONG_DAN: {title: "HƯỚNG DẪN", template_family: generic_named_document}
+  CHUONG_TRINH: {title: "CHƯƠNG TRÌNH", template_family: generic_named_document}
+  KE_HOACH: {title: "KẾ HOẠCH", template_family: ke_hoach, template_file: ke_hoach.yaml}
+  PHUONG_AN: {title: "PHƯƠNG ÁN", template_family: generic_named_document}
+  DE_AN: {title: "ĐỀ ÁN", template_family: generic_named_document}
+  DU_AN: {title: "DỰ ÁN", template_family: generic_named_document}
+  BAO_CAO: {title: "BÁO CÁO", template_family: bao_cao, template_file: bao_cao.yaml}
+  BIEN_BAN: {title: "BIÊN BẢN", template_family: generic_named_document}
+  TO_TRINH: {title: "TỜ TRÌNH", template_family: to_trinh, template_file: to_trinh.yaml}
+  HOP_DONG: {title: "HỢP ĐỒNG", template_family: generic_named_document}
+  CONG_VAN: {title: null, has_type_title: false, template_family: cong_van, template_file: cong_van.yaml}
+  CONG_DIEN: {title: "CÔNG ĐIỆN", template_family: generic_named_document}
+  BAN_GHI_NHO: {title: "BẢN GHI NHỚ", template_family: generic_named_document}
+  BAN_THOA_THUAN: {title: "BẢN THỎA THUẬN", template_family: generic_named_document}
+  GIAY_UY_QUYEN: {title: "GIẤY ỦY QUYỀN", template_family: generic_named_document}
+  GIAY_MOI: {title: "GIẤY MỜI", template_family: giay_moi, template_file: giay_moi.yaml}
+  GIAY_GIOI_THIEU: {title: "GIẤY GIỚI THIỆU", template_family: generic_named_document}
+  GIAY_NGHI_PHEP: {title: "GIẤY NGHỈ PHÉP", template_family: generic_named_document}
+  PHIEU_GUI: {title: "PHIẾU GỬI", template_family: generic_named_document}
+  PHIEU_CHUYEN: {title: "PHIẾU CHUYỂN", template_family: generic_named_document}
+  PHIEU_BAO: {title: "PHIẾU BÁO", template_family: generic_named_document}
+  THU_CONG: {title: "THƯ CÔNG", template_family: generic_named_document}
+resolution_order:
+  - exact_template_file
+  - generic_named_document
+  - require_manual_review_if_specialized_layout
