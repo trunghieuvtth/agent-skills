@@ -1,0 +1,10 @@
+{
+  "name": "vietnam-government-document-nd30",
+  "version": "3.3.0",
+  "description": "Vietnamese government document drafting and ND30 legal-format compliance skill",
+  "author": {"name": "Nguyen Trung Hieu"},
+  "repository": "https://github.com/trunghieuvtth/agent-skills",
+  "license": "MIT",
+  "keywords": ["vietnam", "government", "legal", "nd30", "docx"],
+  "skills": "skills"
+}
