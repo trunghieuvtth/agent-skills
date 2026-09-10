@@ -1,0 +1,15 @@
+{
+  "name": "trunghieuvtth-agent-skills",
+  "description": "Cross-model skills marketplace for ZCode, Hermes and compatible AI agents",
+  "plugins": [
+    {
+      "name": "vietnam-government-document-nd30",
+      "source": "./plugins/vietnam-government-document-nd30",
+      "description": "ND30 V3.3 Legal-Aware: Vietnamese government administrative document drafting, legal/authority checks, DOCX format validation and citation QA",
+      "version": "3.3.0",
+      "category": "government",
+      "tags": ["vietnam", "government", "legal", "nd30", "docx"],
+      "strict": true
+    }
+  ]
+}
