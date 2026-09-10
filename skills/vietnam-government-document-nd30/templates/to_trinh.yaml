@@ -1,0 +1,51 @@
+version: 3.3.1
+document_type: TO_TRINH
+legal_basis: Nghi_dinh_30_2020_ND_CP
+has_type_title: true
+page:
+  size: A4
+  orientation: portrait
+  margins_mm: {top: 20, bottom: 20, left: 30, right: 20}
+font: {family: Times New Roman, color: black}
+header:
+  left:
+    parent_agency: "[CƠ QUAN CHỦ QUẢN TRỰC TIẾP]"
+    issuing_agency: "[CƠ QUAN BAN HÀNH]"
+  right:
+    national_header: "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+    national_motto: "Độc lập - Tự do - Hạnh phúc"
+number_and_date:
+  number: "Số: [CHƯA CÓ SỐ]/TTr-[KÝ HIỆU CƠ QUAN]"
+  locality_date: "[ĐỊA DANH], ngày [..] tháng [..] năm [....]"
+title_block:
+  document_type_title: "TỜ TRÌNH"
+  subject: "[VỀ VIỆC ...]"
+recipient:
+  label: "Kính gửi:"
+  values: ["[CƠ QUAN/NGƯỜI CÓ THẨM QUYỀN XEM XÉT, QUYẾT ĐỊNH]"]
+sections:
+  - heading: "I. SỰ CẦN THIẾT/CƠ SỞ ĐỀ XUẤT"
+  - heading: "II. CƠ SỞ PHÁP LÝ"
+    note: "Chỉ dùng căn cứ đã kiểm tra danh tính, hiệu lực, sửa đổi/thay thế và mức liên quan."
+  - heading: "III. NỘI DUNG TRÌNH"
+    requirements: [van_de_trinh, phuong_an_de_xuat, tham_quyen_quyet_dinh]
+  - heading: "IV. NGUỒN LỰC/KINH PHÍ"
+    optional: true
+    note: "Không tự tạo mức chi, nguồn kinh phí hoặc thẩm quyền tài chính."
+  - heading: "V. KIẾN NGHỊ"
+    requirements: [noi_dung_de_nghi_phe_duyet_or_xem_xet]
+attachments:
+  optional: true
+  items: ["[DỰ THẢO VĂN BẢN KÈM THEO NẾU CÓ]", "[PHỤ LỤC/TÀI LIỆU LIÊN QUAN NẾU CÓ]"]
+signature:
+  signing_authority: "[CẦN XÁC MINH TƯ CÁCH KÝ]"
+  title: "[CHỨC VỤ NGƯỜI KÝ]"
+  signer_name: "[CHƯA XÁC ĐỊNH NGƯỜI KÝ]"
+recipients_block:
+  heading: "Nơi nhận:"
+  items: ["Như trên;", "[NƠI NHẬN KHÁC NẾU CÓ];", "Lưu: VT, [ĐƠN VỊ SOẠN THẢO]."]
+validation:
+  require_target_authority_verified: true
+  require_legal_basis_verified: true
+  require_attachment_relationship_check: true
+  require_no_unresolved_placeholders_for_final: true
