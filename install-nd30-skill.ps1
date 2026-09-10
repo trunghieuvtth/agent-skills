@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 $SkillName = 'vietnam-government-document-nd30'
-$Version = '3.3.0'
+$Version = '3.3.1'
 $Repo = 'trunghieuvtth/agent-skills'
 $RawUrl = "https://raw.githubusercontent.com/$Repo/main/skills/$SkillName/SKILL.md"
 $RepoUrl = "https://github.com/$Repo.git"
@@ -13,7 +13,7 @@ function Download-Skill($dest) {
     Invoke-WebRequest -UseBasicParsing $RawUrl -OutFile $out
     $txt = Get-Content $out -Raw
     if ($txt -notmatch '(?m)^name:\s*vietnam-government-document-nd30\s*$') { throw 'Invalid skill name/frontmatter' }
-    if ($txt -notmatch '3\.3\.0') { throw 'Unexpected skill version' }
+    if ($txt -notmatch '3\.3\.1') { throw 'Unexpected skill version' }
     return $out
 }
 function Install-ZCode { $p=Download-Skill (Join-Path $HOME ".zcode\skills\$SkillName"); Write-Host "[OK] ZCode      -> $p" }
@@ -41,9 +41,7 @@ function Show-ChatGPTNote {
     Write-Host '       Use Plugins -> Skills -> Create -> Upload from computer on an eligible account.'
     Write-Host "       Source: $RawUrl"
 }
-function Install-All {
-    Install-ZCode; Install-Hermes; Install-Claude; Install-Grok; Install-OpenClaw; Install-Codex; Install-Gemini; Show-ChatGPTNote
-}
+function Install-All { Install-ZCode; Install-Hermes; Install-Claude; Install-Grok; Install-OpenClaw; Install-Codex; Install-Gemini; Show-ChatGPTNote }
 function Install-Auto {
     $found=$false
     if ((Has-Cmd 'zcode') -or (Test-Path (Join-Path $HOME '.zcode'))) { Install-ZCode; $found=$true }
@@ -53,9 +51,7 @@ function Install-Auto {
     if ((Has-Cmd 'openclaw') -or (Test-Path (Join-Path $HOME '.openclaw'))) { Install-OpenClaw; $found=$true }
     if ((Has-Cmd 'codex') -or $env:CODEX_HOME -or (Test-Path (Join-Path $HOME '.codex'))) { Install-Codex; $found=$true }
     if ((Has-Cmd 'gemini') -or (Test-Path (Join-Path $HOME '.gemini'))) { Install-Gemini; $found=$true }
-    if (Test-Path (Join-Path $HOME '.agents\skills')) {
-        $p=Download-Skill (Join-Path $HOME ".agents\skills\$SkillName"); Write-Host "[OK] AgentSkills -> $p"; $found=$true
-    }
+    if (Test-Path (Join-Path $HOME '.agents\skills')) { $p=Download-Skill (Join-Path $HOME ".agents\skills\$SkillName"); Write-Host "[OK] AgentSkills -> $p"; $found=$true }
     if (-not $found) { Write-Host 'No supported local AI runtime detected. Use mode all to provision all local skill locations.' }
     Show-ChatGPTNote
 }
