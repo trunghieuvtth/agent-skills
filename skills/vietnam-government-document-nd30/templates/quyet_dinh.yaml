@@ -1,0 +1,54 @@
+version: 3.3.1
+document_type: QUYET_DINH_CA_BIET
+legal_basis: Nghi_dinh_30_2020_ND_CP
+has_type_title: true
+page:
+  size: A4
+  orientation: portrait
+  margins_mm: {top: 20, bottom: 20, left: 30, right: 20}
+font: {family: Times New Roman, color: black}
+header:
+  left:
+    parent_agency: "[CƠ QUAN CHỦ QUẢN TRỰC TIẾP]"
+    issuing_agency: "[CƠ QUAN BAN HÀNH]"
+  right:
+    national_header: "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+    national_motto: "Độc lập - Tự do - Hạnh phúc"
+number_and_date:
+  number: "Số: [CHƯA CÓ SỐ]/QĐ-[KÝ HIỆU CƠ QUAN]"
+  locality_date: "[ĐỊA DANH], ngày [..] tháng [..] năm [....]"
+title_block:
+  document_type_title: "QUYẾT ĐỊNH"
+  subject: "[VỀ VIỆC ...]"
+legal_basis_block:
+  style: italic
+  items:
+    - "Căn cứ [VĂN BẢN QUY ĐỊNH CHỨC NĂNG, NHIỆM VỤ, THẨM QUYỀN — ĐÃ XÁC MINH];"
+    - "Căn cứ [VĂN BẢN CHUYÊN NGÀNH — ĐÃ XÁC MINH];"
+    - "Theo đề nghị của [ĐƠN VỊ/CÁ NHÂN CÓ THẨM QUYỀN]."
+authority_line:
+  text: "[CHỨC DANH NGƯỜI CÓ THẨM QUYỀN BAN HÀNH]"
+decision_word: "QUYẾT ĐỊNH:"
+articles:
+  - number: 1
+    heading: "[NỘI DUNG QUYẾT ĐỊNH CHÍNH]"
+  - number: 2
+    heading: "[HIỆU LỰC/THỜI ĐIỂM THỰC HIỆN NẾU PHÙ HỢP]"
+  - number: 3
+    heading: "[TRÁCH NHIỆM THI HÀNH]"
+signature:
+  signing_authority: "[CẦN XÁC MINH TƯ CÁCH KÝ]"
+  title: "[CHỨC VỤ NGƯỜI KÝ]"
+  signer_name: "[CHƯA XÁC ĐỊNH NGƯỜI KÝ]"
+recipients_block:
+  heading: "Nơi nhận:"
+  items:
+    - "[CƠ QUAN/CÁ NHÂN THI HÀNH];"
+    - "[NƠI NHẬN KHÁC NẾU CÓ];"
+    - "Lưu: VT, [ĐƠN VỊ SOẠN THẢO]."
+validation:
+  require_legal_basis_verified: true
+  require_authority_verified: true
+  require_article_number_sequence: true
+  require_no_unresolved_placeholders_for_final: true
+  require_render_check_for_final: true
