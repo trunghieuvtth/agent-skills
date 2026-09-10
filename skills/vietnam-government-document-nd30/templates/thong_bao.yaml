@@ -1,0 +1,45 @@
+version: 3.3.1
+document_type: THONG_BAO
+legal_basis: Nghi_dinh_30_2020_ND_CP
+has_type_title: true
+page:
+  size: A4
+  orientation: portrait
+  margins_mm: {top: 20, bottom: 20, left: 30, right: 20}
+font: {family: Times New Roman, color: black}
+header:
+  left:
+    parent_agency: "[CƠ QUAN CHỦ QUẢN TRỰC TIẾP]"
+    issuing_agency: "[CƠ QUAN BAN HÀNH]"
+  right:
+    national_header: "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+    national_motto: "Độc lập - Tự do - Hạnh phúc"
+number_and_date:
+  number: "Số: [CHƯA CÓ SỐ]/TB-[KÝ HIỆU CƠ QUAN]"
+  locality_date: "[ĐỊA DANH], ngày [..] tháng [..] năm [....]"
+title_block:
+  document_type_title: "THÔNG BÁO"
+  subject: "[NỘI DUNG THÔNG BÁO]"
+body:
+  style:
+    size_pt: 13
+    alignment: justified
+    first_line_indent_cm: 1.0
+    line_spacing: 1.15
+    space_after_pt: 6
+  blocks:
+    - "[CĂN CỨ/BỐI CẢNH NẾU CẦN]"
+    - "[NỘI DUNG CẦN THÔNG BÁO]"
+    - "[THỜI GIAN/ĐỊA ĐIỂM/TRÁCH NHIỆM THỰC HIỆN NẾU CÓ]"
+    - "[ĐẦU MỐI LIÊN HỆ NẾU CẦN VÀ ĐÃ XÁC MINH]"
+signature:
+  signing_authority: "[CẦN XÁC MINH TƯ CÁCH KÝ]"
+  title: "[CHỨC VỤ NGƯỜI KÝ]"
+  signer_name: "[CHƯA XÁC ĐỊNH NGƯỜI KÝ]"
+recipients_block:
+  heading: "Nơi nhận:"
+  items: ["[CƠ QUAN/ĐƠN VỊ/CÁ NHÂN CẦN BIẾT/THỰC HIỆN];", "[NƠI NHẬN KHÁC NẾU CÓ];", "Lưu: VT, [ĐƠN VỊ SOẠN THẢO]."]
+validation:
+  require_time_place_consistency_when_applicable: true
+  require_no_unresolved_placeholders_for_final: true
+  require_render_check_for_final: true
