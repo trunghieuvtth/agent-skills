@@ -1,0 +1,42 @@
+version: 3.3.1
+template_family: generic_named_document
+scope: named_administrative_documents_without_specialized_template
+page:
+  inherit: shared_layout.yaml
+header:
+  left:
+    parent_agency: "[CƠ QUAN CHỦ QUẢN TRỰC TIẾP]"
+    issuing_agency: "[CƠ QUAN BAN HÀNH]"
+  right:
+    national_header: "CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM"
+    national_motto: "Độc lập - Tự do - Hạnh phúc"
+number_and_date:
+  number: "Số: [CHƯA CÓ SỐ]/[CHỮ VIẾT TẮT TÊN LOẠI]-[KÝ HIỆU CƠ QUAN]"
+  locality_date: "[ĐỊA DANH], ngày [..] tháng [..] năm [....]"
+title_block:
+  document_type_title: "[TÊN LOẠI THEO PHỤ LỤC III]"
+  subject: "[TRÍCH YẾU]"
+body:
+  style:
+    size_pt: 13
+    alignment: justified
+    first_line_indent_cm: 1.0
+    line_spacing: 1.15
+    space_after_pt: 6
+  blocks:
+    - "[NỘI DUNG THEO TÍNH CHẤT LOẠI VĂN BẢN]"
+signature:
+  signing_authority: "[CẦN XÁC MINH TƯ CÁCH KÝ]"
+  title: "[CHỨC VỤ NGƯỜI KÝ]"
+  signer_name: "[CHƯA XÁC ĐỊNH NGƯỜI KÝ]"
+recipients_block:
+  heading: "Nơi nhận:"
+  items:
+    - "[NƠI NHẬN PHÙ HỢP];"
+    - "Lưu: VT, [ĐƠN VỊ SOẠN THẢO]."
+validation:
+  require_document_type_against_appendix_iii: true
+  require_abbreviation_against_appendix_iii: true
+  require_specialized_template_check: true
+  require_no_unresolved_placeholders_for_final: true
+  require_render_check_for_final: true
